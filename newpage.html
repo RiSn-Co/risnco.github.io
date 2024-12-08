@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./Risn.png" />
+    <title>Links Website</title>
+
+<link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Importing Norwester */
+      @font-face {
+        font-family: "Norwester";
+        src: url("ontsource/norwester") format("woff2"),
+          url("https://fontsource/norwester/400.css") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Syne", sans-serif;
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("./jonatan-pie-3l3RwQdHRHg-unsplash.jpg")
+            no-repeat center center fixed;
+        background-size: cover;
+        color: #fdf5e6;
+        overflow-x: hidden;
+      }
+
+      /* Container Layout */
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        gap: 30px;
+        padding: 20px;
+      }
+
+      .image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #fdf5e6;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .image:hover {
+        transform: scale(1.1);
+      }
+
+      /* Typography */
+      .brand {
+        font-family: "Norwester", sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #fdf5e6;
+      }
+
+      .brand span {
+        font-family: "League Gothic", sans-serif;
+                letter-spacing: 5px;
+                align-items: "Center";
+
+      }
+
+      .tagline {
+        font-family: "League Gothic", sans-serif;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        color: #fdf5e6;
+        margin-top: 10px;
+      }
+
+      /* Links and Buttons */
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .links-container a {
+        text-decoration: none;
+        padding: 15px 30px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        font-family: "League Gothic", sans-serif;
+        color: #000;
+        background: #f4e1c1; /* Old sand color */
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .links-container a:hover {
+        background: #d5f5d3; /* Old pale green hover color */
+        color: #093d5c;
+        transform: translateY(-5px);
+      }
+
+      /* Social Icons */
+      .social-icons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .social-icons a {
+        font-size: 30px;
+        color: #fdf5e6;
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #ffcc66;
+        transform: rotate(10deg) scale(1.2);
+      }
+
+      /* Contact Section */
+      .contact-info {
+        margin-top: 30px;
+        font-size: 1.2rem;
+        font-family: "League Gothic", sans-serif;
+        color: #fdf5e6;
+        letter-spacing: 1px;
+      }
+
+      .contact-info i {
+        margin-right: 10px;
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 40px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fdf5e6;
+        font-size: 1rem;
+        font-family: "League Gothic", sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      /* Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .container {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Logo/Image -->
+      <a href="https://risn-co.blogspot.com">
+      <div class="image">
+        <img src="./Risn.png" alt="RiSn Co Logo" />
+      </div>
+      </a>
+
+      <!-- Brand and Tagline -->
+      <div class="text-content">
+        <p class="brand">
+          <span>
+          RiSn Co.
+          </span>
+        </p>
+        <p class="tagline">Bridge Route</p>
+      </div>
+
+      <!-- Links Section -->
+      <div class="links-container">
+        <a href="https://testrunforrisn.w3spaces.com/" target="_blank">RiSn Lib.</a>
+        <a href="https://risn-today.blogspot.com/" target="_blank">The RiSn Today</a>
+        <a href="./brdge.html" target="_blank">Risn Book House</a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61553593541731&is"
+          ><i class="fa fa-facebook-official"></i
+        ></a>
+        <a href="https://www.instagram.com/risn_co_/"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/RisnCo8371"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@risn_co."><i class="fa fa-youtube"></i></a>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact-info">
+        <p><i class="fa fa-map-marker"></i> Pune, Maharashtra</p>
+        <p><i class="fa fa-envelope"></i> risncorp@gmail.com</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+      &copy; 2024 RiSn Co. | Get in touch via email: risncorp@gmail.com</th>
+
+    </footer>
+
+    <!-- Optional Script for future animations -->
+    <script>
+      // Preloader animation, etc. can be added later
+    </script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="./Risn.png">
+  <title>Links Website</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Syne', sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url("https://risnbridge.w3spaces.com/jonatan-pie-3l3RwQdHRHg-unsplash.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #fdf5e6;
+      overflow-x: hidden;
+    }
+
+    /* Container Layout */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #fdf5e6;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .image:hover {
+        transform: scale(1.1);
+      }
+
+
+
+    .brand {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      color: #fdf5e6;
+    }
+
+    .tagline {
+      font-family: 'League Gothic', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      color: #fdf5e6;
+      margin-top: 10px;
+    }
+
+    /* Links and Buttons */
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+      
+    }
+
+    .links-container a {
+      text-decoration: none;
+      padding: 15px 30px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      font-family: 'League Gothic', sans-serif;
+      color: #000;
+      background: #f4e1c1;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+            margin-right: auto;
+            margin-left: auto;      
+    }
+
+    .links-container a:hover {
+      background: #d5f5d3;
+      color: #093d5c;
+      transform: translateY(-5px);
+    }
+
+       .book-image {
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+         
+
+
+      /* Define styling for the book tile images */
+		.grid-item img {.
+			max-width: 100%;
+		}
+
+		/* Define styling for the zoom effect on book tile hover */
+		.grid-item:hover {
+			transform: scale(1.1);
+			z-index: 2;
+			box-shadow: 0 0 120px rgba(0, 0, 0, 0.5);
+		}
+
+		.grid-item:hover img {
+			transform: scale(1.03);
+		}
+
+
+  
+
+   .grid-item {
+            background: black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border-gap: 3px solid rgba(0, 0, 0, 0.8);
+            padding: relative;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+             
+        }
+        .grid-item:hover {
+            transform: scale(1.1);
+        }
+.book-container{
+            margin-right: auto;
+            margin-left: auto;
+}
+
+
+
+
+    /* Book Section */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      margin: auto;
+           border-radius: 10px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align: center;
+            gap: 20px;
+            margin-right: auto;
+            margin-left: auto;
+    }
+
+    .grid-item {
+      background: transparent;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.05);
+    }
+
+    .book-image {
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+      background: transparent;
+    }
+
+    .social-icons a {
+      font-size: 30px;
+      color: #fdf5e6;
+      transition: transform 0.3s ease, color 0.3s ease;
+        background: transparent;
+    }
+
+    .social-icons a:hover {
+      color: #ffcc66;
+        background: transparent;
+      transform: rotate(10deg) scale(1.2);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fdf5e6;
+      font-size: 1rem;
+      font-family: 'League Gothic', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+     <!-- Logo/Image -->
+      <a href="https://risn-co.blogspot.com">
+      <div class="image">
+        <img src="./Risn.png" alt="RiSn Co Logo" />
+      </div>
+      </a>
+
+    <!-- Brand and Tagline -->
+    <div class="text-content">
+      <p class="brand">RiSn Co.</p>
+      <p class="tagline">Book House</p>
+    </div>
+
+ <div class="links-container">
+        <section class="book-container" align="center" style="align-items: center;">
+          <div class="grid-container" align="center" style="align-items: center;">
+        <a href="https://heroofthecityfiles.blogspot.com/" class="w3-button w3-hover-blue w3-large w3-black" style="width: 442px;" target="_blank"></i>
+                       <div class="grid-item" font-family="EB Garamond">
+
+                <table>
+          <Tr>
+            <Th>
+
+              <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiIzU4XeCujg6fGVFHCnP4lvCwAKxP_bdNasb1B2_07MJhQ-b1QrMaJusKw-bu5vW_Au1fSV3rdjRL9_ys-8r96GaSJvRD7ls4SL1eTujsDjVk0Qrh4zmEImFO-w9jzikSD6qQ5tXgHNbq97iKgYLpBbswKjpddBzpPA4ZhklJ1-FnGpaTRbGuB6IXFwy0=s239" class="book-image">
+                       </div> </th>
+                                    <div class="Hot-f" style="font-family: "EB Garamond", serif;">
+              <Th> <h4  > The Hero Of The City Files </h4>
+              <h6 text-align="left" > A Fabulous Crime Thriller<br>
+              in Which Our Protagonists Go <br>
+              From Normal Humans To  <Br>
+              God Crushers
+              <br>~Vedant Kulkarni</h6> 
+     </th>
+                       </div>
+      </tr>
+        </table>
+        </div>
+                </a>
+           
+
+        <a href="/" class="w3-button w3-hover-blue w3-large w3-black" style="width: 442px;" target="_blank"></i>
+         <div class="grid-item">
+      <table>
+          <Tr>
+            <Th>
+              <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjjJcn5oyv_QJop7jKmYWK92MEptcEeoW-Wlorv1D9xo2YpZXQcMcsp97i7altsyk2wHE-JMGPiIXMN8aA5PgUEJHQ4bIFDF6tAzRj2z4smvXyOduLPXSvElFvXegNNiE5_VqvyXyiUKecYXgo7WSHdqfGfRKaT5w3NIsh0HSCdPIgP9EOGGYvEb_uB0K8=s239" class="book-image"> 
+              </th>
+              <Th> <h3>The Wrath Of Festus </h3>
+
+              <h6>This Story is About Few Men <br>who lived Their whole lives as Villains<br> but in the end died as Heroes <br> ~Ranveer Dabade</h6>
+     </th>
+      </tr>
+        </table>
+          </div>
+                </a>
+            
+             
+     <a href="https://evanescent-memories-and-repercussions.blogspot.com" 
+     class="w3-button w3-hover-blue w3-large w3-black" style="width: 442px;" target="_blank"></i>
+     <div class="grid-item">
+      <table>
+          <Tr>
+            <Th>
+              <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg1jI9RMKzqBVW0PbbwBn7gV9Eks9NsgD3BPnj7loSHZ2v4G3QvRbdWYzqjehJQf-0CUQw8aIJq7w-oGM0Xh92BP2YvgEEyR9CGXyqVyhtiKSgOvxMq71qV5M0qwZotZCfOxXjsl5kOg-iOl8uetJt0xIEXnj2dyt47p1j9wqGjkxUvvb1aiAq3_HIq138=s239" class="book-image">
+              </th>
+              <Th> <h4> The Evanescent Memories<Br>and Their Repercussions  </h4>
+              <h6> In this Story Mark Uncovers <br> the Mystery Surrounding  <br>The Death His GrandFather <br> ~Prem Balol
+     </th>
+      </tr>
+        </table>
+          </div>
+          
+        
+                </a>
+                <a href="https://the-bond-preview.blogspot.com/" class="w3-button w3-hover-blue w3-large w3-black" style="width: 442px;" target="_blank"></i>
+     <div class="grid-item">
+      <table>
+          <Tr>
+            <Th>
+              <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg3Fb1AYl5Gp7BGSI3fIHey9m8jzZLlIyKq3-JM60M5dRRaBbyyY7xcpLEEZRzh8HQ4_gV7is8sSIsJvDOTiksgyWiqH6utQqqAiBuG3rC1q1Ih4UiUIAZALFOb8S6MC77ieOOAcVc_3dIWRd26HtAHs9tpI4sDtrYiKUQwHsNrLDEbakDeNnbPbjKmEnc=s239" class="book-image">
+              </th>
+      <div>
+              <Th> <h3>The Bond </h3>
+              <h6> The Storyline revolves Karan,<br> a thirteen year old boy.<br >
+              His Life is about to Change <br>as he notices There is something <br>off about his dreams. <br> Buckle up For What is  About to come <br> ~ Shardul Gokhale
+  </i></a> </th>
+  </div>
+      </tr>
+                
+        </table>
+         </div>
+  </a>
+    </div>
+      <div class="links-container">
+        <a href="./review.html" target="_blank">Are you a Reviewer</a>
+
+ </div> 
+
+             <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61553593541731&is"><i class="fa fa-facebook-official"></i ></a>
+        <a href="https://www.instagram.com/risn_co_/"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/RisnCo8371"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/@risn_co."><i class="fa fa-youtube"></i></a>
+      </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 RiSn Co. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
